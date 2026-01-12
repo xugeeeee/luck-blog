@@ -1,0 +1,18 @@
+# Netlify configuration for Hexo blog
+
+[build]
+  # Directory to publish (Hexo generates static files to 'public' folder)
+  publish = "public"
+  # Build command
+  command = "npm run build"
+
+[build.environment]
+  # Node.js version
+  NODE_VERSION = "20"
+
+# Redirects and headers (optional, add as needed)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
