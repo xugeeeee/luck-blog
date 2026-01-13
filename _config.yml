@@ -3,22 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 我的个人博客
-subtitle: '记录成长，分享知识'
-description: '一个记录学习、生活和思考的个人博客'
-keywords: 博客, 技术, 生活
-author: wangh
+title: Ray's Blog
+subtitle: '努力不会徒劳，爱并非凑巧'
+description: '终点不明沿途风景要好好看'
+keywords: 博客, 生活, 思考, 成长
+author: Ray
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://luckyy-blog.netlify.app/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -102,3 +102,10 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# 本地搜索配置
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
